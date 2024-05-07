@@ -1,12 +1,16 @@
 [tool.poetry]
-name = "flask"
+name = "flaskproject"
 version = "0.1.0"
 description = ""
 authors = ["Sergeeva Larisa <mindzu@mail.ru>"]
 readme = "README.md"
+packages = [
+    {include = "fproject"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+flask = "^3.0"
 
 
 [build-system]
