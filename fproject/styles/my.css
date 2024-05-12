@@ -1,3 +1,8 @@
 .gradient {
     background: linear-gradient(45deg, #f08080 0%, #c71585 50%);
 }
+
+h2 {
+    width: 100vw;
+    text-align: center;
+}

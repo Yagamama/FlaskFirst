@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "<a href='/courses/1'>Courses</a>" # render_template('my.html')  
+    return render_template('my.html')  # "<a href='/courses/1'>Courses</a>"
 
 @app.get('/users')
 def users_get():
