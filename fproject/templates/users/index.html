@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h3>Список пользователей:</h3>
+    <form method="get">
+        <input type="search" name="term" value="{{ search }}"/>
+        <input type="submit" value="Искать"/>
+    </form>
+    {% if messages %}
+        <ul>
+            {% for cat, msg in messages %}
+                <li class="{{ cat }}">{{ msg }}</li>
+            {% endfor%}
+        </ul>
+    {% endif %}
+    {% for user in users%}
+        <p>{{ user }}</p>
+    {% endfor %}
+</body>
+</html>
