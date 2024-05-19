@@ -1,0 +1,12 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.gradient {
+    background: linear-gradient(45deg, #e7bebe, #f5bd75);
+}
+
+h2 {
+    width: 100vw;
+    text-align: center;
+}

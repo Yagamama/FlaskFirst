@@ -10,7 +10,7 @@ def hello():
     return render_template('my.html')  # "<a href='/courses/1'>Courses</a>"
 
 @app.get('/users')
-def users_get():
+def users_get(): 
     term = request.args.get('term', '')
     if term:
         filtered = [user for user in users if (term in user)]
